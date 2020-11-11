@@ -47,7 +47,7 @@ function route_home (config) {
         })
         .value());
 
-    return res.render('home', {
+    return res.render(config.theme_override_home || 'home', {
       config        : config,
       pages         : build_nested_pages(pageList),
       body_class    : 'page-home',

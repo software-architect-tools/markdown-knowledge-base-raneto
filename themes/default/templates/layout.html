@@ -20,6 +20,12 @@
   {{/config.rtl_layout}}
 
   {{{config.analytics}}}
+  
+  {{#config.theme_override_layout_append_css}}
+  <style>
+  {{config.theme_override_layout_append_css}}
+  </style>  
+  {{/config.theme_override_layout_append_css}}  
 
 </head>
 <body class="{{body_class}}">

@@ -55,7 +55,7 @@ function route_wildcard (config) {
       content = contentProcessors.stripMeta(content);
       content = contentProcessors.processVars(content, config);
 
-      var template = meta.template || 'page';
+      var template = meta.template || config.theme_override_page || 'page';
       var render   = template;
 
       // Check for "/edit" suffix

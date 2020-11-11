@@ -4,7 +4,7 @@
 function route_login_page (config) {
   return function (req, res, next) {
 
-    return res.render('login', {
+    return res.render(config.theme_override_login || 'login', {
       config      : config,
       layout      : null,
       lang        : config.lang,
